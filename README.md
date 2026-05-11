@@ -1,4 +1,4 @@
-# 🐾 WildPose: A Unified Framework for Robust Pose Estimation in the Wild
+# WildPose: A Unified Framework for Robust Pose Estimation in the Wild
 
 [Jianhao Zheng](https://jianhao-zheng.github.io/), [Liyuan Zhu](https://www.zhuliyuan.net/), [Zihan Zhu](https://zzh2000.github.io), [Iro Armeni](https://ir0.github.io/)
 
