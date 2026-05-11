@@ -93,7 +93,7 @@ wget https://huggingface.co/gradient-spaces/WildPose/resolve/main/MASt3R_ViTLarg
 
 ## 🚀 Run WildPose
 
-### 🌪 Benchmark Dynamic
+### Benchmark Dynamic
 
 Download the dynamic benchmark datasets:
 
@@ -145,7 +145,7 @@ output/
 
 For example, a Wild-SLAM Mocap run writes to `output/Wild_SLAM_Mocap/crowd/`, while a 7-Scenes run writes to `output/7scenes/chess/`. The estimated full trajectory is stored in TUM format at `traj/est_poses_full.txt`, and the main pose metrics are summarized in `traj/metrics_full_traj.txt`.
 
-### 🧊 Benchmark Static
+### Benchmark Static
 
 Download the static benchmark datasets:
 
