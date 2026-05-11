@@ -1,4 +1,4 @@
-# WildPose: A Unified Framework for Robust Pose Estimation in the Wild
+# 🐾 WildPose: A Unified Framework for Robust Pose Estimation in the Wild
 
 [Jianhao Zheng](https://jianhao-zheng.github.io/), [Liyuan Zhu](https://www.zhuliyuan.net/), [Zihan Zhu](https://zzh2000.github.io), [Iro Armeni](https://ir0.github.io/)
 
@@ -10,23 +10,23 @@ Paper Coming Soon | [Video](https://youtu.be/j-1I1y2fxgU) | [Project Page](https
 
 WildPose is a unified monocular camera pose-estimation framework for in-the-wild videos, including dynamic scenes, static scenes, and low-ego-motion sequences. It combines 3D-aware features from a frozen MASt3R backbone with differentiable dense bundle adjustment and learned motion masks for robust trajectory estimation.
 
-## Table of Contents
+## 📚 Table of Contents
 
-1. [TODO](#todo)
-2. [Installation](#installation)
-3. [Checkpoints](#checkpoints)
-4. [Run WildPose](#run-wildpose)
-5. [Acknowledgements](#acknowledgements)
-6. [Citation](#citation)
-7. [Contact](#contact)
+1. [📝 TODO](#-todo)
+2. [🛠 Installation](#-installation)
+3. [📦 Checkpoints](#-checkpoints)
+4. [🚀 Run WildPose](#-run-wildpose)
+5. [🙏 Acknowledgements](#-acknowledgements)
+6. [📚 Citation](#-citation)
+7. [✉ Contact](#-contact)
 
-## TODO
+## 📝 TODO
 
 - Add run and evaluation scripts for the Sintel dataset.
 - Add scripts for customized videos.
 - Release training code.
 
-## Installation
+## 🛠 Installation
 
 The following setup follows the working notes in `log of installation.md`. The tested environment uses Python 3.10, PyTorch 2.5.1, CUDA 12.4 wheels, MASt3R, lietorch, and the local CUDA extension in `setup.py`.
 
@@ -81,7 +81,7 @@ print("CUDA available:", torch.cuda.is_available())
 PY
 ```
 
-## Checkpoints
+## 📦 Checkpoints
 
 Create a `pretrained/` directory and download both checkpoints from the WildPose Hugging Face repository:
 
@@ -91,9 +91,9 @@ wget https://huggingface.co/gradient-spaces/WildPose/resolve/main/wildpose_v0.pt
 wget https://huggingface.co/gradient-spaces/WildPose/resolve/main/MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric.pth -P pretrained/
 ```
 
-## Run WildPose
+## 🚀 Run WildPose
 
-### Benchmark Dynamic
+### 🌪 Benchmark Dynamic
 
 Download the dynamic benchmark datasets:
 
@@ -145,7 +145,7 @@ output/
 
 For example, a Wild-SLAM Mocap run writes to `output/Wild_SLAM_Mocap/crowd/`, while a 7-Scenes run writes to `output/7scenes/chess/`. The estimated full trajectory is stored in TUM format at `traj/est_poses_full.txt`, and the main pose metrics are summarized in `traj/metrics_full_traj.txt`.
 
-### Benchmark Static
+### 🧊 Benchmark Static
 
 Download the static benchmark datasets:
 
@@ -174,7 +174,7 @@ bash scripts_run/run_static_all.sh seven_scenes
 bash scripts_run/run_static_all.sh tum_ablation
 ```
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
 This repository is initialized from [WildGS-SLAM](https://github.com/GradientSpaces/WildGS-SLAM), and the README structure follows its release style. We thank the WildGS-SLAM authors for releasing their codebase.
 
@@ -182,7 +182,7 @@ WildPose also builds on ideas and components from DROID-SLAM, lietorch, MASt3R/D
 
 This work is supported by the Center for Integrated Facility Engineering (CIFE) and the Stanford Robotics Center (SRC). We also thank Stanford's Marlowe and Sherlock clusters for providing GPU computing resources for model training and evaluation.
 
-## Citation
+## 📚 Citation
 
 If you find this code or paper useful, please cite:
 
@@ -195,6 +195,6 @@ If you find this code or paper useful, please cite:
 }
 ```
 
-## Contact
+## ✉ Contact
 
 For questions, comments, and bug reports, please contact [Jianhao Zheng](mailto:jianhao@stanford.edu).
