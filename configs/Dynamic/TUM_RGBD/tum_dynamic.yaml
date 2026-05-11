@@ -1,0 +1,25 @@
+inherit_from: ./configs/wildgs_slam.yaml
+
+dataset: 'tumrgbd'
+
+tracking:
+  buffer: 350
+
+data:
+  root_folder: ./datasets/TUM_RGBD
+  output: ./output/TUM_RGBD
+
+cam:  #NOTE: intrinsic is different per scene in TUM
+  # refer to https://vision.in.tum.de/data/datasets/rgbd-dataset/file_formats#intrinsic_camera_calibration_of_the_kinect
+  png_depth_scale: 5000.0 #for depth image in png format
+  ### target/output camera settings, camera_size -> resize -> crop -> target_size
+  H: 480 
+  W: 640 
+  fx: 535.4
+  fy: 539.2
+  cx: 320.1
+  cy: 247.6
+  H_edge: 8
+  W_edge: 8
+  H_out: 384
+  W_out: 512

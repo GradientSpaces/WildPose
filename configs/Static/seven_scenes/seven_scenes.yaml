@@ -1,0 +1,32 @@
+inherit_from: ./configs/wildgs_slam.yaml
+
+dataset: '7scenes'
+
+tracking:
+  buffer: 500 
+  backend:
+    thresh: 16.0   # only consider edge with avg flow < X pixels
+    radius: 2   
+  # motion_filter:
+  #   thresh: 4.0  
+  # frontend:
+  #   keyframe_thresh: 4.0
+
+cam:  #NOTE: intrinsic is different per scene in TUM
+  # refer to https://vision.in.tum.de/data/datasets/rgbd-dataset/file_formats#intrinsic_camera_calibration_of_the_kinect
+  png_depth_scale: 5000.0 #for depth image in png format
+  H: 480 
+  W: 640 
+  fx: 585.0
+  fy: 585.0
+  cx: 320.0
+  cy: 240.0
+  ### target/output camera settings, camera_size -> resize -> crop -> target_size
+  H_edge: 8
+  W_edge: 8
+  H_out: 384
+  W_out: 512
+
+data:
+  root_folder: ./datasets/7-scenes
+  output: ./output/7scenes

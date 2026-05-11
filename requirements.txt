@@ -1,0 +1,5 @@
+git+https://github.com/microsoft/MoGe.git
+opencv-python-headless==4.10.0.84
+evo
+munch
+PyQt5

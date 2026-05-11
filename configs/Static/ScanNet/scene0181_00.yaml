@@ -1,0 +1,12 @@
+inherit_from: ./configs/Static/ScanNet/scannet.yaml
+scene: scene0181_00
+
+data:
+  input_folder: ROOT_FOLDER_PLACEHOLDER/scene0181_00/processed/data
+cam:
+  H: 480 
+  W: 640 
+  fx: 577.346252
+  fy: 577.459778
+  cx: 323.171936
+  cy: 236.417465

@@ -1,0 +1,9 @@
+inherit_from: ./configs/Dynamic/Wild_SLAM_Mocap/wild_slam_mocap.yaml
+scene: racket
+
+data:
+  input_folder: ROOT_FOLDER_PLACEHOLDER/scene1/racket
+
+cam: 
+  fx: 647.3926391601562
+  fy: 646.5911254882812

@@ -1,0 +1,5 @@
+inherit_from: ./configs/Dynamic/Bonn/bonn_dynamic.yaml
+scene: bonn_person_tracking2
+
+data:
+  input_folder: ROOT_FOLDER_PLACEHOLDER/rgbd_bonn_person_tracking2

@@ -1,0 +1,5 @@
+inherit_from: ./configs/Dynamic/Wild_SLAM_Mocap/wild_slam_mocap.yaml
+scene: basketball
+
+data:
+  input_folder: ROOT_FOLDER_PLACEHOLDER/scene1/ball

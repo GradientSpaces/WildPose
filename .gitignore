@@ -1,0 +1,15 @@
+datasets/
+build/
+*.egg-info/
+
+__pycache__/
+*.pyc
+*.so
+
+
+pretrained/
+old/
+
+output*/
+
+.vscode/

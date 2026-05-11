@@ -1,0 +1,20 @@
+inherit_from: ./configs/wildgs_slam.yaml
+
+dataset: 'bonn_dynamic'
+
+data:
+  root_folder: ./datasets/Bonn
+  output: ./output/Bonn
+
+cam:  #intrinsic is different per scene in TUM, this cam does not have distortion
+  H: 480 
+  W: 640 
+  fx: 542.822841
+  fy: 542.576870
+  cx: 315.593520
+  cy: 237.756098
+  distortion: [0.039903, -0.099343, -0.000730, -0.000144, 0.000000]
+  H_edge: 8
+  W_edge: 8
+  H_out: 384
+  W_out: 512

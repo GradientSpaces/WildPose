@@ -1,0 +1,17 @@
+inherit_from: ./configs/Dynamic/TUM_RGBD/tum_dynamic.yaml
+scene: freiburg2_desk_with_person
+
+data:
+  input_folder: ROOT_FOLDER_PLACEHOLDER/rgbd_dataset_freiburg2_desk_with_person
+cam:  #intrinsic is different per scene in TUM, this cam does not have distortion
+  H: 480 
+  W: 640 
+  fx: 520.9
+  fy: 521.0
+  cx: 325.1
+  cy: 249.7
+  distortion: [0.2312, -0.7849, -0.0033, -0.0001, 0.9172]
+
+tracking:
+  # This sequence is too long
+  force_keyframe_every_n_frames: -1

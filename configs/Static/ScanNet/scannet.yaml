@@ -1,0 +1,19 @@
+inherit_from: ./configs/wildgs_slam.yaml
+
+dataset: 'scannet'
+
+cam:  #NOTE: intrinsic is different per scene in TUM
+  # refer to https://vision.in.tum.de/data/datasets/rgbd-dataset/file_formats#intrinsic_camera_calibration_of_the_kinect
+  png_depth_scale: 5000.0 #for depth image in png format
+  ### target/output camera settings, camera_size -> resize -> crop -> target_size
+  H_edge: 8
+  W_edge: 8
+  H_out: 384
+  W_out: 512
+
+data:
+  root_folder: /home/jianhaozheng/Gaussian_in_the_Wild/data/ScanNet
+  output: ./output/ScanNet
+
+tracking:
+  buffer: 500 

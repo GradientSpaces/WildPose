@@ -1,0 +1,24 @@
+inherit_from: ./configs/wildgs_slam.yaml
+
+dataset: 'wild_slam_mocap'
+
+data:
+  root_folder: ./datasets/Wild_SLAM_Mocap
+  output: ./output/Wild_SLAM_Mocap
+  
+cam:  #intrinsic is slightly different per seq
+  H: 720 
+  W: 1280 
+  fx: 647.2167358398438
+  fy: 646.4154663085938
+  cx: 643.1209716796875
+  cy: 365.55963134765625
+  distortion: [-0.0550149604678154, 0.06560786068439484,-0.0005061274860054255,0.0004771310486830771,-0.021717390045523643]
+  # H_out: 360
+  # W_out: 640
+  # H_out: 288
+  # W_out: 512
+  H_edge: 8
+  W_edge: 8
+  H_out: 384
+  W_out: 512

@@ -1,0 +1,12 @@
+inherit_from: ./configs/Dynamic/TUM_RGBD/tum_dynamic.yaml
+scene: freiburg3_walking_halfsphere
+
+data:
+  input_folder: ROOT_FOLDER_PLACEHOLDER/rgbd_dataset_freiburg3_walking_halfsphere
+cam:  #intrinsic is different per scene in TUM, this cam does not have distortion
+  H: 480 
+  W: 640 
+  fx: 535.4
+  fy: 539.2
+  cx: 320.1
+  cy: 247.6

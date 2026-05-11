@@ -1,0 +1,5 @@
+inherit_from: ./configs/Static/seven_scenes/seven_scenes.yaml
+scene: fire
+
+data:
+  input_folder: ROOT_FOLDER_PLACEHOLDER/fire

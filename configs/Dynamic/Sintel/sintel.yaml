@@ -1,0 +1,17 @@
+inherit_from: ./configs/wildgs_slam.yaml
+
+dataset: 'sintel'
+
+data:
+  root_folder: /home/jianhaozheng/Gaussian_in_the_Wild/data/Sintel
+  output: ./output/sintel
+  
+cam:
+  H: 360 
+  W: 846 
+  H_out: 384
+  W_out: 512
+
+
+# tracking:
+#   full_ba: True # Sintel dataset is too short

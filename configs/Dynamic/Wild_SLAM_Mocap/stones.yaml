@@ -1,0 +1,9 @@
+inherit_from: ./configs/Dynamic/Wild_SLAM_Mocap/wild_slam_mocap.yaml
+scene: stones
+
+data:
+  input_folder: ROOT_FOLDER_PLACEHOLDER/scene1/stones
+
+cam: 
+  fx: 647.7445068359375
+  fy: 646.9425659179688
