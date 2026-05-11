@@ -20,6 +20,12 @@ WildPose is a unified monocular camera pose-estimation framework for in-the-wild
 6. [Citation](#citation)
 7. [Contact](#contact)
 
+## TODO
+
+- Add run and evaluation scripts for the Sintel dataset.
+- Add scripts for customized videos.
+- Release training code.
+
 ## Installation
 
 The following setup follows the working notes in `log of installation.md`. The tested environment uses Python 3.10, PyTorch 2.5.1, CUDA 12.4 wheels, MASt3R, lietorch, and the local CUDA extension in `setup.py`.
@@ -32,28 +38,21 @@ cd WildPose
 git submodule update --init --recursive
 ```
 
-If `thirdparty/lietorch` is not registered in your checkout, add it manually:
-
-```bash
-git submodule add https://github.com/princeton-vl/lietorch thirdparty/lietorch
-git submodule update --init --recursive thirdparty/lietorch
-```
-
-1. Create and activate the conda environment.
+2. Create and activate the conda environment.
 
 ```bash
 conda create -n wildpose python=3.10 ninja mkl mkl-include -c conda-forge -y
 conda activate wildpose
 ```
 
-1. Install PyTorch and torch-scatter.
+3. Install PyTorch and torch-scatter.
 
 ```bash
 pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu124
 pip install torch-scatter -f https://data.pyg.org/whl/torch-2.5.0+cu124.html
 ```
 
-1. Install local dependencies.
+4. Install local dependencies.
 
 ```bash
 # Optional: set this to match your GPU architectures before compiling CUDA extensions.
@@ -63,14 +62,14 @@ pip install --no-build-isolation thirdparty/lietorch
 pip install --no-build-isolation -e thirdparty/mast3r
 ```
 
-1. Build WildPose's CUDA backend and install Python requirements.
+5. Build WildPose's CUDA backend and install Python requirements.
 
 ```bash
 pip install --no-build-isolation .
 pip install -r requirements.txt
 ```
 
-1. Check the installation.
+6. Check the installation.
 
 ```bash
 python - <<'PY'
@@ -174,12 +173,6 @@ You can also run one benchmark group at a time:
 bash scripts_run/run_static_all.sh seven_scenes
 bash scripts_run/run_static_all.sh tum_ablation
 ```
-
-## TODO
-
-- Add run and evaluation scripts for the Sintel dataset.
-- Add scripts for customized videos.
-- Release training code.
 
 ## Acknowledgements
 
