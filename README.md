@@ -4,7 +4,7 @@
 
 Computer Vision and Pattern Recognition (CVPR) 2026
 
-Paper Coming Soon | [Video](https://youtu.be/j-1I1y2fxgU) | [Project Page](https://wildpose.github.io/)
+[Paper](https://arxiv.org/abs/2605.12774) | [Video](https://youtu.be/j-1I1y2fxgU) | [Project Page](https://wildpose.github.io/)
 
 ![WildPose teaser](media/teaser.png)
 
